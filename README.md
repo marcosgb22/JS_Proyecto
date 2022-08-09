@@ -1,3 +1,3 @@
-# JS_Simulador
+# JS_Simulador 2.0
 
-SITIO https://gorgeous-cucurucho-35e804.netlify.app/
+SITIO 
