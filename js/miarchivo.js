@@ -11,12 +11,12 @@ function elegir_cripto(MONEDA){
         
       break;
     case 'AZURE':
-        VALOR = 0.0005;
+        VALOR = 2;
         NOMBRE = "AZURE";
         alert('ELEGISTE AZURE');
       break;
     case 'PING':
-        VALOR = 0.1;
+        VALOR = 3;
         NOMBRE = "PING";
         alert('ELEGISTE PING');
       break;
