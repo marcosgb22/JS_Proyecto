@@ -27,6 +27,8 @@ a:hover,a:visited,a:link {
   }
 
 .content_cards{
+    justify-content: center;
+    align-items: center;
     display: flex;  
     flex-wrap: wrap;
     
