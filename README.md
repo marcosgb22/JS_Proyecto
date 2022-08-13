@@ -1,5 +1,5 @@
 # JS_Simulador 2.0
-
+https://dashing-mochi-795a31.netlify.app/
 
 
 El sitio es de venta de NFT con criptomonedas
