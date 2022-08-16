@@ -1,3 +1,5 @@
+
+
 let TOTAL = [0 , 0];
 let CRIPTO =  [0 , " "];
 

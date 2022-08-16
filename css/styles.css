@@ -45,4 +45,11 @@ a:hover,a:visited,a:link {
 
 }
 
+.content_total{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+}
+
 
