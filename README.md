@@ -1,5 +1,6 @@
 # JS_Simulador 2.0
 
+https://starlit-conkies-d00b4e.netlify.app/
 
 
 El sitio es de venta de NFT con criptomonedas
