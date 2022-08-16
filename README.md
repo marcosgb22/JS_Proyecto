@@ -17,4 +17,4 @@ Despues de elegir la critpo eliges que NFT quieres comprar
 y al final devuelve el monto TOTAL en la critpomoneda elegida-
 
 
-Se agrjo js que de estructura al DOM segun array de NFT. creando tarjetas de manera automatica
+Se agrego js que de estructura al DOM segun array de NFT. creando tarjetas de manera automatica
