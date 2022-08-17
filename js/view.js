@@ -48,29 +48,41 @@ let botonCALAVERA = document.getElementById("CALAVERA")
 let botonGIRASOL = document.getElementById("GIRASOL")
 let botonNICKITUS = document.getElementById("NICKITUS")
 
-botonMEN.addEventListener("click", respuestaClick)
-function respuestaClick(){
-  Total = 1
+
+botonMEN.onclick = () =>{  
+  Total = Total + 1
+  cambiartotal(Total)
+}
+
+botonCALAVERA.onclick = () =>{  
+  Total = Total + 2
+  cambiartotal(Total)
+}
+
+botonGIRASOL.onclick = () =>{  
+  Total = Total + 3
+  cambiartotal(Total)
+}
+
+botonNICKITUS.onclick = () =>{  
+  Total = Total + 7
+  cambiartotal(Total)
 }
 
 
-let n = 0
 
-while (n < 5) {
 
-n ++
 
+function cambiartotal(Total){
 
 let total = document.getElementById("content_total");
-
-
 
 total.innerHTML =
 
     `<div class="lista"  style="width: 12rem;" >
     </div>
     <p class="color : white ">Total a pagar -  ${Total} ₿(MTR)</p>
-    </div>`
+    </div>`;
 
 //document.getElementById("content_total").append(total)
 
