@@ -1,0 +1,39 @@
+
+[
+    {
+        "id": 1,
+        "nombre": "MEN",
+        "precio": 1 ,
+        "img": "Recursos/Imagenes/InShot_20220623_025042057.jpg",
+        "habilitado" : "ON"
+
+    },
+
+     {
+        "id": 2,
+        "nombre": "CALAVERA",
+        "precio": 2 ,
+        "img": "Recursos/Imagenes/tapa_eno_calavera.jpg",
+        "habilitado" : "ON"
+
+    },
+
+     {
+        "id": 3,
+        "nombre": "GIRASOL",
+        "precio": 3 ,
+        "img": "Recursos/Imagenes/TapaEpEon.jpg",
+        "habilitado" : "ON"
+
+    },
+
+     {
+        "id": 4,
+        "nombre": "NICKITUS",
+        "precio": 7 ,
+        "img": "Recursos/Imagenes/nico.JPG",
+        "habilitado" : "ON"
+
+    }
+
+]
