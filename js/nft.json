@@ -34,6 +34,23 @@
         "img": "Recursos/Imagenes/nico.JPG",
         "habilitado" : "ON"
 
+    },
+    {
+        "id": 5,
+        "nombre": "LIBRO",
+        "precio": 2 ,
+        "img": "Recursos/Imagenes/libro.jpg",
+        "habilitado" : "ON"
+
+    },
+    {
+        "id": 5,
+        "nombre": "JIRAFA",
+        "precio": 1 ,
+        "img": "Recursos/Imagenes/jirafa.jpg",
+        "habilitado" : "ON"
+
     }
+
 
 ]

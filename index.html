@@ -13,6 +13,11 @@
     <link href="css/bootstrap.min.css" rel="stylesheet" >
     <link href="css/styles.css" rel="stylesheet" >
 
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 
     <title>NFT BUY</title>
 </head>
@@ -36,17 +41,23 @@
     <!-- Con javascript se generan las tarjetas de venta -->  
   </div>  
 
-  <div class="content_total" id="content_total">  
-    <!-- Con javascript se generan las tarjetas de venta -->  
+  <section id="section" class="section">
+  <div class="content_precios" id="content_precios">  
+    <!-- Con javascript se genera -->  
   </div>  
 
+  <div class="content_total" id="content_total">  
+    <!-- Con javascript se genera iformacion de total -->  
+  </div>  
+
+  </section>
 
   <footer class="FOOTER">
     <!-- El footer se usa por ejemplo, para tener un mapa de navegacion, las redes sociales del sitio, o un copyright
     <p class="parrafo_footer">&copy; COPYRIGHT 2022 MASTERMIND.COM</p> -->  
   </footer>
 </body>
-
+<script src="js/scripts.js"  type="module" ></script>
 <script src="js/bootstrap.bundle.js"  ></script>     
-<script src="js/view.js"  type="module" ></script>
+
 </html>

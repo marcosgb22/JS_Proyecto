@@ -35,14 +35,23 @@ a:hover,a:visited,a:link {
 }
 
 .card {
-
+    display: flex;
     margin: 15px;
 }
+
+
 
 .FOOTER{
     position: absolute;
     bottom: 0;
 
+}
+
+.section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 .content_total{
@@ -53,3 +62,17 @@ a:hover,a:visited,a:link {
 }
 
 
+.content_precios{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    border-bottom: 1px, white;
+}
+
+.total{
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+}
