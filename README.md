@@ -1,6 +1,6 @@
 # JS_Simulador 2.0 - librerias
 
-zingy-speculoos-ff3d5c.netlify.app
+https://zingy-speculoos-ff3d5c.netlify.app/
 
 
 El sitio es de venta de NFT con criptomonedas
