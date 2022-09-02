@@ -1,6 +1,6 @@
 # JS_Simulador 2.0 - librerias
 
-https://chipper-bublanina-6c82b5.netlify.app
+zingy-speculoos-ff3d5c.netlify.app
 
 
 El sitio es de venta de NFT con criptomonedas
@@ -14,3 +14,5 @@ se agrego json con info
 informacion de cada compra 
 
 libreria de alarma para avisos
+
+consume API rick and morty
