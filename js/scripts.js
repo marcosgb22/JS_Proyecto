@@ -11,6 +11,26 @@ let NFT = JSON.parse(NFTstring)
 
 let Total = 0
 
+console.log(NFT);
+
+function traerDatos(done) {
+
+  const results = fetch("https://rickandmortyapi.com/api/character");
+  
+  results
+      .then(response => response.json())
+      .then(data => {done(data)});
+  
+  }
+
+
+  traerDatos(data => {
+    console.log(data);
+
+
+
+
+
 // Crear objetos
 
 function NFTs (id, nombre, precio, img, habilitado ){
@@ -20,12 +40,9 @@ this.nombre = nombre;
 this.precio = precio;
 this.img = img;
 this.habilitado = habilitado;
-
-//this.presentar = function() { console.log(" item -- "+this.nombre)}
-
-this.boton = function() { 
+this.boton = function(){ 
     
-    if (habilitado === "ON"){
+    if (habilitado === "Alive"){
 
     console.log(" item -- " + nombre)
     habilitado = "FALSE";
@@ -52,9 +69,20 @@ this.boton = function() {
 
 let itemsNFT = [] //array con elementos
 
-for (const items of NFT){
 
-    itemsNFT.push(new NFTs (items.id, items.nombre, items.precio, items.img, items.habilitado));
+
+
+
+for (const items of data.results ){
+
+    if (items.status == "Alive"){
+
+    itemsNFT.push(new NFTs (items.id, items.name, items.id, items.image, items.status));
+    }  
+
+
+
+
 }    
 
 
@@ -153,6 +181,6 @@ function finalizarcompra(){
 
 
 
-
+});
 
 
