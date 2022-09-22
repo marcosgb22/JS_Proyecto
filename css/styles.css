@@ -58,21 +58,48 @@ a:hover,a:visited,a:link {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: aliceblue;
+    color: rgb(2, 2, 2);
 }
-
 
 .content_precios{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: aliceblue;
+    color: rgb(8, 8, 8);
     border-bottom: 1px, white;
+    padding-left: 3px;
+}
+
+.parrafo_precio{
+    text-align: justify;
 }
 
 .total{
     display: flex;
     flex-direction: column;
-    margin: 30px;
+}
+
+.canvas{
+    color: black;
+}
+
+.section{
+    display: flex;
+    flex-direction: column;
+}
+
+.parrafo_contactos{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

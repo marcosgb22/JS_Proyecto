@@ -13,6 +13,8 @@ let Total = 0
 
 console.log(NFT);
 
+//cargo datos de API
+
 function traerDatos(done) {
 
   const results = fetch("https://rickandmortyapi.com/api/character");
@@ -23,11 +25,8 @@ function traerDatos(done) {
   
   }
 
-
   traerDatos(data => {
     console.log(data);
-
-
 
 
 
@@ -42,18 +41,18 @@ this.img = img;
 this.habilitado = habilitado;
 this.boton = function(){ 
     
-    if (habilitado === "Alive"){
+    if (habilitado === "Alive"){  //Si se da la primera compra acepta 
 
-    console.log(" item -- " + nombre)
+    console.log(" item -- " + nombre) 
     habilitado = "FALSE";
     cuenta(precio)
     agregarprecios(precio, nombre)
 
-    } else {
+    } else {    //si ya fue vendidio genera alatma Toastify
 
         console.log(" item -- " + nombre + " fue vendido" )
         Toastify({
-            text: "Item --"+ nombre + " fue vendido" ,
+            text: "Item --"+ nombre + " fue agregado" ,
             className: "info",
             style: {
               background: "linear-gradient(to right, #bbc255, #393b19)",
@@ -80,9 +79,6 @@ for (const items of data.results ){
     itemsNFT.push(new NFTs (items.id, items.name, items.id, items.image, items.status));
     }  
 
-
-
-
 }    
 
 
@@ -100,7 +96,7 @@ for (const items of itemsNFT){
         <div class="card-body">
           <h5 class="card-title"></h5>
           <p class="card-text">${items.nombre}   -   ${items.precio} ₿(MTR)</p>
-          <a href="#" class="btn btn-secondary" type="button" value="myButton"  id="${items.nombre}">ADD TO CART</a>
+          <a href="#" class="btn btn-secondary" type="button" value="myButton"  id="${items.nombre}"  data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" >ADD TO CART</a>
         </div>
         </div>`
     
@@ -120,42 +116,38 @@ function cuenta(precio){
 }
 
 function agregarprecios(precio, nombre){
-
     let content = document.createElement("div");
     
     content.innerHTML =
     
         `<div class="lista"  style="width: 12rem;" >
         </div>
-        <p class="color : white ">item agregardo -- ${nombre}   -  ${precio} ₿(MTR)</p>
+        <p class="parrafo_precio"> ${nombre}   -  ${precio} ₿(MTR)</p>
         </div>`;
 
     document.getElementById("content_precios").appendChild(content);  
-        
-    
 }
 
-function cambiartotal(Total){
 
+function cambiartotal(Total){
     let total = document.getElementById("content_total");
     
     total.innerHTML =
     
-        `<div class="total"  style="width: 12rem;" >
-    
+        `<div class="total"  >
+
+        <p class="color : white ">_________________________________</p>
         <p class="color : white ">TOTAL A PAGAR  = ${Total} ₿(MTR)</p>
 
         <a href="#" class="btn btn-secondary" type="button"  value="myButton"  id="total_pagar">FINALIZAR COMPRA</a>
         </div>`;
     
-    document.getElementById("total_pagar").onclick = finalizarcompra;
-    
+    document.getElementById("total_pagar").onclick = finalizarcompra; 
 }
 
 
 
 function finalizarcompra(){
-
     Swal.fire({
         title: 'Esta seguro',
         text: "Su compra esta por ser concretada por "+Total + " ₿(MTR) ",
@@ -175,11 +167,6 @@ function finalizarcompra(){
         }
       })
 }
-
-
-
-
-
 
 });
 
