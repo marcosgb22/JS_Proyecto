@@ -4,8 +4,6 @@ body {
     animation-duration: 4s;
     animation-name: aparecer;
     background-color: rgb(37, 34, 34);
-/*    background-image: url(../Recursos/Imagenes/nico_celular.jpg);*/
-
     font-family: 'Oswald', sans-serif;
     height: 100vh ;
 
@@ -21,12 +19,7 @@ li {
     list-style: none;
 }
 
-/*
-a:hover,a:visited,a:link {
-    color: rgb(218, 208, 208);
-    
-  }
-*/
+
 .content_cards{
     justify-content: center;
     align-items: center;
@@ -43,7 +36,7 @@ a:hover,a:visited,a:link {
 
 
 .FOOTER{
-    position: absolute;
+
     bottom: 0;
     align-items: center;
     justify-content: center;
