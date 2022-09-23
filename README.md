@@ -1,18 +1,14 @@
-# JS_Simulador 2.0 - librerias
+# JS_Simulador 
 
 https://joyful-starlight-bf8d4f.netlify.app
 
 
-El sitio es de venta de NFT con criptomonedas
+El sitio es un simulador de venta de NFT con criptomonedas
+se conecta a una API de RICK AND MORTY
+trae la informacion segun grupo
 
-Se agregaron js de eventos-
+y luego el usuario elige NFT para comprar , se va generando un carrito con el total
+hasta terminada la compra. 
+Hay una seccion de formulario que envia los datos a un correo marcosgb22@gmail.com 
 
-se agregaron botones de compra
 
-se agrego json con info
-
-informacion de cada compra 
-
-libreria de alarma para avisos
-
-consume API rick and morty
