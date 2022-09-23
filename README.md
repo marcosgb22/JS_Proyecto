@@ -12,4 +12,18 @@ y luego el usuario elige NFT para comprar , se va generando un carrito con el to
 hasta terminada la compra. 
 Hay una seccion de formulario que envia los datos a un correo marcosgb22@gmail.com 
 
+********
+marcosgb22 <marcosgb22@gmail.com>
+18:14 (hace 1 hora)
+para mí
 
+Hello nn@rata,
+
+12345
+
+Best wishes,
+EmailJS team
+**************
+
+
+EL correo fue deshabilitados por seguridad
