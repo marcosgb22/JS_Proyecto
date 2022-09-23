@@ -22,6 +22,5 @@ document.getElementById('form')
       })
     }, (err) => {
       btn.value = 'Send Email';
-      alert(JSON.stringify(err));
     });
 });
