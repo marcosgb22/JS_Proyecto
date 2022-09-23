@@ -1,23 +1,10 @@
-import data from './nft.json' assert {type: 'json'};
-
-
-//trabajo y guardado de variables "localstorage"
-
-localStorage.setItem("NFT", JSON.stringify(data));
-
-let NFTstring = localStorage.getItem("NFT")
-
-let NFT = JSON.parse(NFTstring)
-
 let Total = 0
-
-console.log(NFT);
 
 //cargo datos de API
 
 function traerDatos(done) {
 
-  const results = fetch("https://rickandmortyapi.com/api/character");
+  const results = fetch("https://rickandmortyapi.com/api/character/");
   
   results
       .then(response => response.json())
@@ -41,14 +28,14 @@ this.img = img;
 this.habilitado = habilitado;
 this.boton = function(){ 
     
-    if (habilitado === "Alive"){  //Si se da la primera compra acepta 
+    if (habilitado === "Alive" || habilitado === "Dead" || habilitado === "unknown"){  //Si se da la primera compra acepta 
 
     console.log(" item -- " + nombre) 
     habilitado = "FALSE";
     cuenta(precio)
     agregarprecios(precio, nombre)
 
-    } else {    //si ya fue vendidio genera alatma Toastify
+    } else {    //si ya fue vendidio genera alarma Toastify
 
         console.log(" item -- " + nombre + " fue vendido" )
         Toastify({
@@ -62,19 +49,42 @@ this.boton = function(){
     }
     
 }
-
-
 }
 
+//itera entre los elementos q se van a ver x categoria
+
+let itemCategoria = localStorage.getItem("Categoria")
 let itemsNFT = [] //array con elementos
 
+if (localStorage.getItem("Categoria")){
+
+ itemCategoria = localStorage.getItem("Categoria")
+
+} else {
+  itemCategoria = "Alive"
+}
+
+document.getElementById("Dead").onclick = function(){
+  itemCategoria = "Dead"
+  localStorage.setItem("Categoria", "Dead");  
+};
+
+document.getElementById("Alive").onclick = function(){
+  itemCategoria = "Alive"
+  localStorage.setItem("Categoria", "Alive");  
+};
+
+document.getElementById("Unknowns").onclick = function(){
+  itemCategoria = "Dead"
+  localStorage.setItem("Categoria", "unknown");  
+};
 
 
-
+//carga los elementos
 
 for (const items of data.results ){
 
-    if (items.status == "Alive"){
+    if (items.status == itemCategoria){
 
     itemsNFT.push(new NFTs (items.id, items.name, items.id, items.image, items.status));
     }  
@@ -106,6 +116,8 @@ for (const items of itemsNFT){
     
 }
 
+
+// Agrega los precios de las compras
 
 function cuenta(precio){
         let valor = precio

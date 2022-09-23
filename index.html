@@ -22,17 +22,29 @@
     <title>NFT BUY</title>
 </head>
 <body>
+
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">HOME</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-link active" aria-current="page" href="#">NTF</a>
-          <a class="nav-link" href="/JS_simulador_API/paginas/contacto.html">CONTACT</a>
-        </div>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              NFTS
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="./index.html" type="button" value="myButton" id="Alive">Alive</a></li>
+              <li><a class="dropdown-item" href="./index.html" type="button" value="myButton" id="Dead">Dead</a></li>
+              <li><a class="dropdown-item" href="./index.html" type="button" value="myButton" id="Unknowns">Unknowns</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="paginas/contacto.html">CONTACT</a>
+          </li>
+        </ul>
       </div>
     </div>
   </nav>
@@ -54,20 +66,16 @@
     </div>
   </div>
 
-  <div class="content_cards" id="content_cards">  
+  <div class="content_cards col-xs-md-xl-xxl-6" id="content_cards">  
     <!-- Con javascript se generan las tarjetas de venta -->  
   </div>  
-
-  
-
-  
-
   </section>
 
-  <footer class="FOOTER">
-    <!-- El footer se usa por ejemplo, para tener un mapa de navegacion, las redes sociales del sitio, o un copyright
-    <p class="parrafo_footer">&copy; COPYRIGHT 2022 MASTERMIND.COM</p> -->  
-  </footer>
+  <div class="section">
+    <div class="FOOTER">
+      <p class="parrafo_footer">&copy;COPYRIGHT 2022 MASTERMIND.COM</p>
+    </div>
+    </div>
 </body>
 <script src="js/scripts.js"  type="module" ></script>
 <script src="js/bootstrap.bundle.js"  ></script>     

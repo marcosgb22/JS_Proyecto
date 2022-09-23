@@ -21,11 +21,12 @@ li {
     list-style: none;
 }
 
+/*
 a:hover,a:visited,a:link {
-    color: rgb(255, 255, 255);
+    color: rgb(218, 208, 208);
     
   }
-
+*/
 .content_cards{
     justify-content: center;
     align-items: center;
@@ -44,6 +45,8 @@ a:hover,a:visited,a:link {
 .FOOTER{
     position: absolute;
     bottom: 0;
+    align-items: center;
+    justify-content: center;
 
 }
 
@@ -102,4 +105,20 @@ a:hover,a:visited,a:link {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
+
+.formulario {
+    color: aliceblue;
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .parrafo_footer {
+    margin: 20px;
+    padding: 10px;
+    color: aliceblue;
+  }

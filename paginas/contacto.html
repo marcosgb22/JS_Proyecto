@@ -12,19 +12,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     <link href="../css/bootstrap.min.css" rel="stylesheet" >
     <link href="../css/styles.css" rel="stylesheet" >
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <title>Contact</title>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">HOME</a>
+          <a class="navbar-brand" href="../index.html">HOME</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="#">NTF</a>
+              <a class="nav-link active" aria-current="page" href="../index.html">NTF</a>
               <a class="nav-link" href="#">CONTACT</a>
             </div>
           </div>
@@ -32,37 +35,43 @@
       </nav>
 
       <section>
-        <dl class="parrafo_contactos">
-            <dt><h3 class="titulos">Bienvenidos a una pagina de Arte, Musica y Lecciones</h3></dt>
+        <dl class="parrafo_contactos container-fluid">
+            <dt><h3 class="titulos"> NFT JOIN</h3></dt>
             <br>
-            <dd>Esta pagina solo trata de contener un poco de arte que he compuesto en todo este tiempo
-            <br>La musica de audiovisulaes fueron compuestos enteramente por mi</dd>
+            <dd>Si tenes consulta sobre alguno de nuestros productos o queres contactarte
+            <br> con algunos de los credores envia la consulta y respondemos en breve</dd>
         </dl>
 
       </section>
-      <section class="form">
-      <form>
+
+        <form  id="form">
         <div class="col-md-12 formulario">
         <div class="col-md-6">
         <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label">Email de contacto</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nmbre@ejemplo.com">
+            <input type="email" class="form-control" id="correo" placeholder="nmbre@ejemplo.com" name="correo">
           </div>
           <div class="mb-3">
             <label for="exampleFormControlTextarea1" class="form-label">Consulta</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <textarea class="form-control"  id="area" rows="3" name="area"></textarea>
         </div>
-        <button type="submit" class="btn btn-secondary btn-lg">Enviar</button>
-    
+        <button type="submit" class="btn btn-secondary btn-lg" value="Send Email" id="button">Enviar</button>   
         </form>
-      </section>
 
-
-
-
-
+        <div class="section">
+        <div class="FOOTER">
+          <p class="parrafo_footer">&copy;COPYRIGHT 2022 MASTERMIND.COM</p>
+        </div>
+        </div>
 </body>
 
-<script src="js/fetch.js"  type="module" ></script>
-<script src="js/bootstrap.bundle.js"  ></script> 
+
+<script src="../js/bootstrap.bundle.js"></script> 
+<script src="../js/correo.js"></script> 
+<script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  emailjs.init('nrZvg4nmh-WkXyMW8')
+</script>
 </html>
